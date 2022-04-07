@@ -122,7 +122,9 @@ h3{
   background-color: white;
 }
 
-
+main{
+  background-color: white;
+}
 
 img{
     width: 200px;
@@ -275,13 +277,13 @@ body {
     }
 
     nav li{
-      margin-bottom: 0px;
+      display: inline-block;
       text-align: center;
       border:none;
+      margin: 5px;
+      width: 100px;
     }
-    ul{
-      background-color: white;
-    }
+
     nav{
       display: inline;
       text-align: center;
@@ -361,21 +363,11 @@ content: "📪";
       display: none;
     }
 
-    ul{
-      background-color: white;
-    }
-
     nav a{
       color: black;
       font-weight: bold;
       font-size: large;
     }
-  
-    nav{
-      display: inline;
-      text-align: center;
-    }
-    
 
     .container1{
       display: grid;
@@ -386,19 +378,24 @@ content: "📪";
     }
 
     nav{
-      background-color: #ddd;
+      display: grid;
+      text-align: center;
+      background-color: lightpink;
       padding: 25px 10px;
       text-align: left;
     }
 
     nav ul{
       list-style-type: none;
-    }
+        }
 
     nav li{
       display: inline;
       margin-right: 5%;
       border: none;
+    }
+    ul .active{
+      background-color: lightskyblue;
     }
 
     nav li:nth-of-type(1)::after{

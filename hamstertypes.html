@@ -25,13 +25,32 @@
         <ul>
             <li><a href = "index.html" >Home</a></li>
             <li class="active"><a href = "hamstertypes.html">Breeds</a></li>
-            <li><a href = "hamsterhousing.html">Housing</a></li>
+            <li><a href = "hamsterhousing.html">Cages</a></li>
             <li><a href = "hamstercare.html">Care</a></li>
             <li><a href = "hamsterplay.html">Play</a></li>
-            <li><a href = "contactme.html">Contact</a></li>
+            <li><a href = "contactme.html">Mail</a></li>
 
         </ul>
     </nav>
+    <div id = "hamburger">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+            <a href="hamstertypes.html" class = "active">Breeds</a>
+            <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="hamsterhousing.html">Cages</a>
+            <a href="hamstercare.html">Care</a>
+            <a href="hamsterplay.html">Play</a>
+            <a href="contactme.html">Mail</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        </div>
+
     <a class = 'skip' href="#main"> Skip to Main Content</a>
 
 <h1>Hamster Types</h1>
@@ -83,7 +102,17 @@ Though they are the only domesticated non-dwarf breed, there still is a lot of v
 <img src = "images/blackham.png" alt = "A solid black hamster looking out of a cork log. Image." width = "200"/>
 </div>
 </main>
-
+<script>
+    /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
 <footer>Edith Zhang &copy; 2022</footer>
 </body>
 
